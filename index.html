@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Download Page</title>
+</head>
+<body>
+    <h1>Download Page</h1>
+    <!-- Adicione o código necessário para iniciar o download do vídeo -->
+    <script>
+        // Obtenha o ID do vídeo a partir dos parâmetros da URL
+        const params = new URLSearchParams(window.location.search);
+        const videoId = params.get('videoId');
+
+        // Inicie o download
+        window.location.href = `https://ndwnatural.github.io/testefuncional/download/${videoId}`;
+    </script>
+</body>
+</html>
+
